@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
-
 const sequelize = require("../config/connection.js");
+
 const Product = require("./Product.js");
 const ProductTag = require("./ProductTag.js");
 const Tag = require("./Tag.js");
@@ -36,8 +36,10 @@ Category.init(
     },
   },
   {
+    // Link to database connection
     sequelize,
-    timestamps: false,
+    // Set to false to remove `created_at` andd `updated_at` fields timestamps: false,
+    timeStamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: "category",
