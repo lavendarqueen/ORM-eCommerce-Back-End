@@ -4,7 +4,7 @@
 
 ## Description
 
-This is an eCommerce Back End application using object-relational mapping, a postgresSQL database, and Sequelize intended to help smaller companies compete in e-Commerce . I built this project because I wanted to learn more about databases and server side functionality. In addition to learning postgresSQL and Sequelize, I also learned about routes and CRUD (Create, Read, Update, and Delete) functions.
+This is an eCommerce Back End application using object-relational mapping, a postgresSQL database, and Sequelize intended to help companies compete in e-Commerce. I built this project because I wanted to learn more about databases and server side functionality. In addition to learning postgresSQL and Sequelize, I also learned about routes and CRUD functions(Create, Read, Update, and Delete).
 
 ## Table of Contents
 
@@ -25,31 +25,20 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
     ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+I collaborated with tutor Megan Meyers.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+I also used the following third-party assets:
 
-If you followed tutorials, include links to those here as well.
+- MDN web docs at https://developer.mozilla.org/en-US/
+- W3 Schools at https://www.w3schools.com/
+- StackOverflow at https://stackoverflow.com/
+- Geeks for Geeks: https://geeksforgeeks.org/
 
 ## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ### MIT License
 
@@ -73,17 +62,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-
 ## Contributions
 
-Contributions in the interest of sharing ideas and concepts are sincerely appreciated. To contribute, fork my repository and send a pull request with your improvements. Please leave a star!
+Contributions in the interest of sharing ideas and concepts are sincerely appreciated. To contribute, please fork my repository and send a pull request with your improvements. Please leave a star!
 
 ## Contact
 
 - Email: lataillep@gmail.com
 - GitHub username: lavendarqueen
-- Deployed repository: https://note-taker-ytjo.onrender.com
+- Deployed repository: https://ORM-eCommerce-Back-End-ytjo.onrender.com
 - GitHub repository: https://github.com/lavendarqueen/ORM-eCommerce-Back-End
 
 ## Tests
