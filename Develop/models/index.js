@@ -5,7 +5,7 @@ const Tag = require("./Tag");
 const ProductTag = require("./ProductTag");
 
 // Products belongsTo Category
-Product.belongsToOne(Category, {
+Product.belongsTo(Category, {
   through: {
     model: Product,
     unique: true,
