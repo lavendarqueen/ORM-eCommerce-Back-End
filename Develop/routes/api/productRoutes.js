@@ -35,7 +35,7 @@ router.get("/:id", async (req, res) => {
 });
 // be sure to include its associated Category and Tag data
 
-// create new product
+// Create new product
 router.post("/", async (req, res) => {
   try {
     const productData = await Product.create({
@@ -56,7 +56,7 @@ router.post("/", async (req, res) => {
     }
   */
 Product.create(req.body).then((product) => {
-  // if there's product tags, we need to create pairings to bulk create in the ProductTag model
+  // Pair productTags needed for bulk create
   if (req.body.tagIds.length) {
     const productTagIdArr = req.body.tagIds.map((tag_id) => {
       return {
@@ -66,13 +66,12 @@ Product.create(req.body).then((product) => {
     });
     return ProductTag.bulkCreate(productTagIdArr);
   }
-  // if no product tags, just respond
+  // if none, send response:
   res.status(200).json(product);
 });
 
-// update product
+// update product and product data
 router.put("/:id", (req, res) => {
-  // update product data
   Product.update(req.body, {
     where: {
       id: req.params.id,
@@ -94,11 +93,11 @@ router.put("/:id", (req, res) => {
               };
             });
 
-          // figure out which ones to remove
+          // Tags to be removed
           const productTagsToRemove = productTags
             .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
             .map(({ id }) => id);
-          // run both actions
+          // run filter & map
           return Promise.all([
             ProductTag.destroy({ where: { id: productTagsToRemove } }),
             ProductTag.bulkCreate(newProductTags),

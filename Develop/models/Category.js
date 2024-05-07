@@ -38,7 +38,7 @@ Category.init(
   {
     // Link to database connection
     sequelize,
-    // Set to false to remove `created_at` andd `updated_at` fields timestamps: false,
+    // Set to false to remove `created_at` and `updated_at` fields timestamps: false,
     timeStamps: false,
     freezeTableName: true,
     underscored: true,
