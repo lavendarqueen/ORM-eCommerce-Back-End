@@ -29,7 +29,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-I collaborated with tutor Megan Meyers.
+I collaborated with Instructor Ben Machock, Teacher's Assistant Casey Miller, Tutor Megan Meyers, and Melissa Cade.
 
 I also used the following third-party assets:
 
