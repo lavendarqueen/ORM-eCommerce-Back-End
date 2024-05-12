@@ -5,9 +5,11 @@ const { Category, Product } = require("../../models");
 
 // Find all categories:
 router.get("/", async (req, res) => {
+  // console.log("----get all categories----");
+  // res.status(200).json({ message: "Hey! We're here!" });
   try {
     const categoryData = await Category.findAll({
-      include: [{ model: Product }],
+      include: [Product],
     });
     res.status(200).json(categoryData);
   } catch (error) {
@@ -60,10 +62,15 @@ router.delete("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
-    if (!categoryData) {
-      res.status(404).json({ message: "No category found with that id!" });
-      return;
-    }
+  } catch (err) {
+    // if (!categoryData) {
+    //   res.json({ message: "No category found with that id!" });
+    // }
+    res.status(400).json(err);
+
+    return;
+  }
+});
 
 // Find a product by id:
 router.get("/:id", async (req, res) => {
@@ -83,7 +90,5 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(error);
   }
 });
-
-
 
 module.exports = router;
