@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Category, Product } = require("../../models");
+const { Category, Product, ProductTag } = require("../../models");
 
 // The `/api/categories` endpoint
 
@@ -60,30 +60,28 @@ router.delete("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
+    if (!categoryData) {
+      return res.json({ message: "No category found with that id!" });
+    }
+    res.status(200).json(categoryData);
   } catch (err) {
-    // if (!categoryData) {
-    //   res.json({ message: "No category found with that id!" });
-    // }
     res.status(400).json(err);
 
     return;
   }
 });
 
-// Find a product by id:
+// Find a category by id:
 router.get("/:id", async (req, res) => {
   try {
-    const productData = await Product.findByPk(req.params.id, {
-      include: [
-        { model: Category },
-        { model: Tag, through: ProductTag, as: "product_tags" },
-      ],
+    const categoryData = await Category.findByPk(req.params.id, {
+      include: [{ model: Product }],
     });
-    if (!productData) {
+    if (!categoryData) {
       res.status(404).json({ message: "No product found with that id!" });
       return;
     }
-    res.status(200).json(productData);
+    res.status(200).json(categoryData);
   } catch (error) {
     res.status(500).json(error);
   }
