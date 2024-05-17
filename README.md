@@ -1,31 +1,48 @@
 # ORM-eCommerce-Back-End
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath) ![dotenv](https://img.shields.io/badge/dotenv-16.4.5-green) ![bcrypt](https://img.shields.io/badge/bcrypt-5.1.1-violet) ![Sequelize](https://img.shields.io/badge/Sequelize-v6.37.3-blue) ![Express](https://img.shields.io/badge/Express-4.19.2-green)
 
 ## Description
 
-This is an eCommerce Back End application using object-relational mapping, a postgresSQL database, and Sequelize intended to help companies compete in e-Commerce. I built this project because I wanted to learn more about databases and server side functionality. In addition to learning postgresSQL and Sequelize, I also learned about routes and CRUD functions(Create, Read, Update, and Delete).
+This is an eCommerce Back End application using object-relational mapping, a postgresSQL database, and Sequelize intended to help companies compete in e-Commerce. I built this project because I wanted to learn more about databases and server side functionality. In addition to learning postgresSQL and Sequelize, I also learned about routes and CRUD functions (Create, Read, Update, and Delete).
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Tests](#tests)
 - [Credits](#credits)
 - [License](#license)
 - [Contributions](#contributions)
-- [Contact](#contact)
+- [Questions](#questions)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+The user can create a new database by opening the schema.sql file and entering the new database name in lines 2 and 5 using the convention: databasename_db.
+
+The user will need to enter the following information in the .env file in order to connect with the database:
+
+- The exact name of the database as referenced in the schema.sql file;
+- The user's username (example: Postgres); and
+- The user's password.
+
+Once this is done, the user can seed the database entering the following command in the command in the command line interface (CLI): npm run seed
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The user will then start the server by entering the following command in the CLI: npm run watch
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Once the server starts, the user will be directed to 
+
+
 
     ![alt text](assets/images/screenshot.png)
+
+## Tests
+
+All the routes in the ORM-eCommerce-Back-End were tested using Insomnia. Please review the walk-through video.
+
+
 
 ## Credits
 
@@ -33,14 +50,15 @@ I collaborated with Instructor Ben Machock, Teacher's Assistant Casey Miller, Tu
 
 I also used the following third-party assets:
 
+- Sequelize v6: https://sequelize.org/docs/v6/
+-
 - MDN web docs at https://developer.mozilla.org/en-US/
 - W3 Schools at https://www.w3schools.com/
 - StackOverflow at https://stackoverflow.com/
-- Geeks for Geeks: https://geeksforgeeks.org/
 
 ## License
 
-### MIT License
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 Copyright (c) 2024 Phyllis Ann Lataille
 
@@ -64,7 +82,15 @@ SOFTWARE.
 
 ## Contributions
 
-Contributions in the interest of sharing ideas and concepts are sincerely appreciated. To contribute, please fork my repository and send a pull request with your improvements. Please leave a star!
+Any contributions made in the spirit of sharing ideas and concepts, will be greatly appreciated. If you have any suggestions that would make this app better, please fork the repo and create a pull request. You can also open an issue with the tag "contribute". Please give this project a star!
+
+### Instructions for forking:
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/fileName)
+3. Commit your Changes (git commit -m)
+4. Push to the Branch (git push origin feature/newFeature)
+5. Open a Pull Request
 
 ## Contact
 
@@ -73,11 +99,7 @@ Contributions in the interest of sharing ideas and concepts are sincerely apprec
 - Deployed repository: https://ORM-eCommerce-Back-End-ytjo.onrender.com
 - GitHub repository: https://github.com/lavendarqueen/ORM-eCommerce-Back-End
 
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples
-
-<!-- ## User Story
+## User Story
 
 AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
@@ -95,4 +117,4 @@ THEN my server is started and the Sequelize models are synced to the PostgreSQL 
 WHEN I open API GET routes in Insomnia Core for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete data in my database -->
+THEN I am able to successfully create, update, and delete data in my database
