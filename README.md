@@ -20,7 +20,7 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 
 ## Video
 
-<video controls src="assets/videos/eCommerceWalkThroughC.mp4" title="Title"></video>
+https://github.com/lavendarqueen/ORM-eCommerce-Back-End/assets/159203938/8567941e-0f2c-4370-9fcd-6af476606555
 
 ## Installation
 
