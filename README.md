@@ -20,7 +20,7 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 
 ## Video
 
-<video controls src="eCommerceWalkThroughC.mp4" title="Title"></video>
+<video controls src="assets/videos/eCommerceWalkThroughC.mp4" title="Title"></video>
 
 ## Installation
 
@@ -28,30 +28,31 @@ Please watch the above walk-through video, which will demonstrate the installati
 
 The user can create a new database by opening the schema.sql file and entering the new database name in lines 2 and 5 using the convention: databasename_db.
 
+![Screenshot Create Database](assets/screenshots/screenshotCreateDb.png)
+
 The user will need to enter the following information in the .env file in order to connect with the database:
 
 - The exact name of the database as referenced in the schema.sql file;
 - The user's username (example: Postgres); and
 - The user's password.
 
+![Screenshot dotenv](assets/screenshots/screenshotEnv.png)
+
 Once this is done, the user can seed the database entering the following command in the command in the command line interface (CLI): npm run seed
 
 ## Usage
 
-The user will then start the server by entering the following command in the CLI:
-npm run watch
+The user will then start the server by entering the following command in the CLI: npm run watch
 
-Once the server starts, the user will need to open insomnia in order to get,
-
-    ![alt text](assets/images/screenshot.png)
+Once the server starts, the user will need to open insomnia in order to test the get, post, put, and delete routes (Please refer to video).
 
 ## Tests
 
-All the routes in the ORM-eCommerce-Back-End were tested using Insomnia. Please review the walk-through video.
+All the routes in the ORM-eCommerce-Back-End were tested using Insomnia, which were recorded in the walk-through video.
 
 ## Credits
 
-I collaborated with Instructor Ben Machock, Teacher's Assistant Casey Miller, Tutor Megan Meyers, and Melissa Cade.
+I collaborated with Instructor Ben Machock, Teacher's Assistant Casey Miller, Tutor Megan Meyers, and fellow student Melissa Cade.
 
 I also used the following third-party assets:
 
@@ -105,7 +106,6 @@ Please contact me with any questions or comments:
 - GitHub username: lavendarqueen
 - Deployed repository: https://ORM-eCommerce-Back-End-ytjo.onrender.com
 - GitHub repository: https://github.com/lavendarqueen/ORM-eCommerce-Back-End
-- Walk-Through Video: <video controls src="eCommerceWalkThroughC.mp4" title="Title"></video>
 
 ## User Story
 
