@@ -8,7 +8,7 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 
 ## Table of Contents
 
-- [Walk-Through-Video](#walk_through_video)
+- [Video](#Video)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
@@ -18,11 +18,13 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 - [Questions](#questions)
 - [User Story](#user-story)
 
+## Video
+
+<video controls src="eCommerceWalkThroughC.mp4" title="Title"></video>
+
 ## Installation
 
-Please watch the following walk-through video, which will demonstrate the installation and usage instructions:
-
-https://github.com/lavendarqueen/ORM-eCommerce-Back-End/assets/159203938/c344ad8e-e4ee-4fa8-9eb4-715043c995b0
+Please watch the above walk-through video, which will demonstrate the installation and usage instructions:
 
 The user can create a new database by opening the schema.sql file and entering the new database name in lines 2 and 5 using the convention: databasename_db.
 
@@ -39,7 +41,7 @@ Once this is done, the user can seed the database entering the following command
 The user will then start the server by entering the following command in the CLI:
 npm run watch
 
-Once the server starts, the user will be directed to
+Once the server starts, the user will need to open insomnia in order to get,
 
     ![alt text](assets/images/screenshot.png)
 
@@ -54,7 +56,7 @@ I collaborated with Instructor Ben Machock, Teacher's Assistant Casey Miller, Tu
 I also used the following third-party assets:
 
 - Sequelize v6: https://sequelize.org/docs/v6/
-- 
+-
 - MDN web docs at https://developer.mozilla.org/en-US/
 - W3 Schools at https://www.w3schools.com/
 - StackOverflow at https://stackoverflow.com/
@@ -103,7 +105,7 @@ Please contact me with any questions or comments:
 - GitHub username: lavendarqueen
 - Deployed repository: https://ORM-eCommerce-Back-End-ytjo.onrender.com
 - GitHub repository: https://github.com/lavendarqueen/ORM-eCommerce-Back-End
-- Walk-Through Video: https://github.com/lavendarqueen/ORM-eCommerce-Back-End...
+- Walk-Through Video: <video controls src="eCommerceWalkThroughC.mp4" title="Title"></video>
 
 ## User Story
 
