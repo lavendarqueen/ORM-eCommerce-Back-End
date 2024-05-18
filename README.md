@@ -22,7 +22,7 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 
 Please watch the following walk-through video, which will demonstrate the installation and usage instructions:
 
-https://github.com/lavendarqueen/ORM-eCommerce-Back-End
+https://github.com/lavendarqueen/ORM-eCommerce-Back-End/assets/159203938/c344ad8e-e4ee-4fa8-9eb4-715043c995b0
 
 The user can create a new database by opening the schema.sql file and entering the new database name in lines 2 and 5 using the convention: databasename_db.
 
