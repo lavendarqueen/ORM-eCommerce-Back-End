@@ -8,7 +8,7 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 
 ## Table of Contents
 
-- [Walk-Through Video](#walk-through-video)
+- [Walk-Through-Video](#walk-through-video)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
