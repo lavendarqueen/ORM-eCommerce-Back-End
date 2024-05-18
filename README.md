@@ -24,7 +24,7 @@ This is an eCommerce Back End application using object-relational mapping, a pos
 
 ## Installation
 
-Please watch the above walk-through video, which will demonstrate the installation and usage instructions:
+Please watch the above walk-through video, which will demonstrate installation and usage of the application.
 
 The user can create a new database by opening the schema.sql file and entering the new database name in lines 2 and 5 using the convention: databasename_db.
 
@@ -38,17 +38,21 @@ The user will need to enter the following information in the .env file in order 
 
 ![Screenshot dotenv](assets/screenshots/screenshotEnv.png)
 
-Once this is done, the user can seed the database entering the following command in the command in the command line interface (CLI): npm run seed
+Once this is done, the user can seed the database entering the following command in the command line interface (CLI):
+
+npm run seed
+
+The user will then start the server by entering the following command in the CLI:
+
+npm run watch
 
 ## Usage
 
-The user will then start the server by entering the following command in the CLI: npm run watch
-
-Once the server starts, the user will need to open insomnia in order to test the get, post, put, and delete routes (Please refer to video).
+Once the server starts, the user will need to open insomnia in order to test the get, post, put, and delete routes (Please refer to the wald-through video).
 
 ## Tests
 
-All the routes in the ORM-eCommerce-Back-End were tested using Insomnia, which were recorded in the walk-through video.
+All the routes in the ORM-eCommerce-Back-End were tested using Insomnia and all tests were included in the walk-through video.
 
 ## Credits
 
@@ -56,11 +60,13 @@ I collaborated with Instructor Ben Machock, Teacher's Assistant Casey Miller, Tu
 
 I also used the following third-party assets:
 
-- Sequelize v6: https://sequelize.org/docs/v6/
--
-- MDN web docs at https://developer.mozilla.org/en-US/
-- W3 Schools at https://www.w3schools.com/
-- StackOverflow at https://stackoverflow.com/
+- Express middleware: https://expressjs.com/en/guide/using-middleware.html
+- MDN web docs MVC: https://developer.mozilla.org/en-US/docs/Glossary/MVC
+- npm express-session: https://www.npmjs.com/package/express-session
+- npm connect-session-sequelize: https://www.npmjs.com/package/connect-session-sequelize
+- Sequelize Model Basics: https://sequelize.org/docs/v6/core-concepts/model-basics/
+- W3 Schools:t https://www.w3schools.com/
+- StackOverflow: https://stackoverflow.com/
 
 ## License
 
@@ -104,7 +110,7 @@ Please contact me with any questions or comments:
 
 - Email: lataillep@gmail.com
 - GitHub username: lavendarqueen
-- Deployed repository: https://ORM-eCommerce-Back-End-ytjo.onrender.com
+- Walk-through video: https://ORM-eCommerce-Back-End-ytjo.onrender.com
 - GitHub repository: https://github.com/lavendarqueen/ORM-eCommerce-Back-End
 
 ## User Story
